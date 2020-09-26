@@ -1,4 +1,4 @@
-# When Does Self-Supervision Help Graph Convolutional Networks?
+# Pre-Training Graph Neural Networks: A Contrastive Learning Framework with Augmentations
 
 PyTorch implementation for [Pre-Training Graph Neural Networks: A Contrastive Learning Framework with Augmentations]() [[supplement]]() [[slides]]()
 

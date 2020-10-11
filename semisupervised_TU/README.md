@@ -14,7 +14,7 @@ cd ..
 
 ## Exploring the Role of Data Augmentation in GraphCL
 
-Reproducing the results in the [figure](https://github.com/Shen-Lab/GraphCL/blob/master/augmentations.png) through executing thw followings:
+Reproducing the results in the [figure](https://github.com/Shen-Lab/GraphCL/blob/master/augmentations.png) through executing the followings:
 
 ### Pre-training: ###
 

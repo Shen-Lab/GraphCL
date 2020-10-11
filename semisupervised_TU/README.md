@@ -70,5 +70,5 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --a
 
 Five suffixes stand for five runs (with mean & std reported), and augmentations could be ```random2, random3, random4``` that sampling from {NodeDrop, Subgraph}, {NodeDrop, Subgraph, EdgePert} and {NodeDrop, Subgraph, EdgePert, AttrMask}, seperately.
 
-```lr``` in pre-training should be tuned from {0.01, 0.001, 0.0001} and ```model_epoch``` in finetuning (this means the epoch checkpoint loaded from pre-trained model) {20, 40, 60, 80, 100}.
+```lr``` in pre-training should be tuned from {0.01, 0.001, 0.0001} and ```model_epoch``` in finetuning (this means the epoch checkpoint loaded from pre-trained model) from {20, 40, 60, 80, 100}.
 

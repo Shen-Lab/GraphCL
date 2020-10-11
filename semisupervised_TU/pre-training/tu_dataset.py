@@ -83,13 +83,43 @@ class TUDatasetExt(TUDataset):
             data = mask_nodes(data, self.aug_ratio)
         elif self.aug == 'none':
             data = data
-        elif self.aug == 'random':
-            ri = np.random.randint(1)
+        elif self.aug == 'random4':
+            ri = np.random.randint(4)
             if ri == 0:
                 data = drop_nodes(data, self.aug_ratio)
+            elif ri == 1:
+                data = subgraph(data, self.aug_ratio)
+            elif ri == 2:
+                data = permute_edges(data, self.aug_ratio)
+            elif ri == 3:
+                data = mask_nodes(data, self.aug_ratio)
             else:
                 print('sample augmentation error')
                 assert False
+
+        elif self.aug == 'random3':
+            ri = np.random.randint(3)
+            if ri == 0:
+                data = drop_nodes(data, self.aug_ratio)
+            elif ri == 1:
+                data = subgraph(data, self.aug_ratio)
+            elif ri == 2:
+                data = permute_edges(data, self.aug_ratio)
+            else:
+                print('sample augmentation error')
+                assert False
+
+
+        elif self.aug == 'random2':
+            ri = np.random.randint(2)
+            if ri == 0:
+                data = drop_nodes(data, self.aug_ratio)
+            elif ri == 1:
+                data = subgraph(data, self.aug_ratio)
+            else:
+                print('sample augmentation error')
+                assert False
+
 
 
 
@@ -248,5 +278,8 @@ def mask_nodes(data, aug_ratio):
     data.x[idx_mask] = torch.tensor(token, dtype=torch.float32)
 
     return data
+
+
+
 
 

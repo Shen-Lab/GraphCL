@@ -61,12 +61,14 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python main.py --dataset NCI1 --aug1 random2 --aug2
 
 ```
 cd ./funetuning
-CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --suffix 0
-CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --suffix 1
-CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --suffix 2
-CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --suffix 3
-CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --suffix 4
+CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --model_epoch 100 --suffix 0
+CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --model_epoch 100 --suffix 1
+CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --model_epoch 100 --suffix 2
+CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --model_epoch 100 --suffix 3
+CUDA_VISIBLE_DEVICES=$GPU_ID python main_cl.py --dataset NCI1 --aug1 random2 --aug2 random2 --semi_split 100 --model_epoch 100 --suffix 4
 ```
 
-Five suffixes stand for five runs (with mean & std reported), augmentations could be ```random2, random3, random4``` that sampling from {NodeDrop, Subgraph}, {NodeDrop, Subgraph, EdgePert} and {NodeDrop, Subgraph, EdgePert, AttrMask}, seperately, and ```lr``` in pre-training should be tuned from {0.01, 0.001, 0.0001}.
+Five suffixes stand for five runs (with mean & std reported), and augmentations could be ```random2, random3, random4``` that sampling from {NodeDrop, Subgraph}, {NodeDrop, Subgraph, EdgePert} and {NodeDrop, Subgraph, EdgePert, AttrMask}, seperately.
+
+```lr``` in pre-training should be tuned from {0.01, 0.001, 0.0001} and ```model_epoch``` in finetuning (this means the epoch checkpoint loaded from pre-trained model) {20, 40, 60, 80, 100}.
 

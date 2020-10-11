@@ -12,6 +12,8 @@ In this repository, we develop contrastive learning with augmentations for GNN p
 
 ![](./graphcl.png)
 
+![](./augmentations.png)
+
 ## Dependencies
 
 Please setup the environment following Requirements in this [repository](https://github.com/chentingpc/gfn#requirements).

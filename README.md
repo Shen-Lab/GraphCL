@@ -9,7 +9,7 @@ In NeurIPS 2020.
 ## Overview
 
 In this repository, we develop contrastive learning with augmentations for GNN pre-training (GraphCL, Figure 1) to address the challenge of data heterogeneity in graphs.
-Systematic study is performed as shown in Figure 2, to assess the performance of contrasting different augmentations on various types of datasets, revealing the rationale of the performances and providing the guidance to adopt the framework for specific datasets.
+Systematic study is performed as shown in Figure 2, to assess the performance of contrasting different augmentations on various types of datasets.
 
 ![](./graphcl.png)
 

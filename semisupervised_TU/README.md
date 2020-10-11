@@ -72,3 +72,6 @@ Five suffixes stand for five runs (with mean & std reported), and augmentations 
 
 ```lr``` in pre-training should be tuned from {0.01, 0.001, 0.0001} and ```model_epoch``` in finetuning (this means the epoch checkpoint loaded from pre-trained model) from {20, 40, 60, 80, 100}.
 
+## Acknowledgements
+
+The backbone implementation is reference to https://github.com/chentingpc/gfn#requirements.

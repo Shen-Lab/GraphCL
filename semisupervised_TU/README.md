@@ -1,3 +1,18 @@
+## Dependencies
+
+Please setup the environment following Requirements in this [repository](https://github.com/chentingpc/gfn#requirements).
+
+Then, please create a directory for pre-trained models to avoid error:
+
+```
+cd ./pre-training
+mkdir models
+cd ..
+```
+
+
+## Exploring the Role of Data Augmentation in GraphCL
+
 ### 1. Pre-training. ###
 
 ```

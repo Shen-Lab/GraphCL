@@ -74,4 +74,4 @@ Five suffixes stand for five runs (with mean & std reported), and augmentations 
 
 ## Acknowledgements
 
-The backbone implementation is reference to https://github.com/chentingpc/gfn#requirements.
+The backbone implementation is reference to https://github.com/chentingpc/gfn.

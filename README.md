@@ -1,6 +1,6 @@
-# Pre-Training Graph Neural Networks: A Contrastive Learning Framework with Augmentations
+# Graph Contrastive Learning with Augmentations
 
-PyTorch implementation for [Pre-Training Graph Neural Networks: A Contrastive Learning Framework with Augmentations]() [[supplement]]() [[slides]]()
+PyTorch implementation for [Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902) [[supplement]](https://yyou1996.github.io/files/neurips2020_graphcl_supplement.pdf) [[slides]](https://yyou1996.github.io/files/neurips2020_graphcl_slides.pdf)
 
 Yuning You<sup>\*</sup>, Tianlong Chen<sup>\*</sup>, Yongduo Sui, Ting Chen, Zhangyang Wang, Yang Shen
 

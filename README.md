@@ -30,6 +30,13 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 If you use this code for you research, please cite our paper.
 
 ```
-TBD
+@misc{you2020graph,
+      title={Graph Contrastive Learning with Augmentations}, 
+      author={Yuning You and Tianlong Chen and Yongduo Sui and Ting Chen and Zhangyang Wang and Yang Shen},
+      year={2020},
+      eprint={2010.13902},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 

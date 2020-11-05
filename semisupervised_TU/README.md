@@ -1,5 +1,6 @@
 ## Dependencies
 
+### Option 1: ###
 Please setup the environment following Requirements in this [repository](https://github.com/chentingpc/gfn#requirements).
 Typically, you might need to run the following commands:
 ```
@@ -9,6 +10,14 @@ pip install torch-sparse==0.4.4 -f https://pytorch-geometric.com/whl/torch-1.4.0
 pip install torch-cluster==1.4.5 -f https://pytorch-geometric.com/whl/torch-1.4.0.html
 pip install torch-spline-conv==1.1.0 -f https://pytorch-geometric.com/whl/torch-1.4.0.html
 pip install torch-geometric==1.1.0
+pip install torch-vision==0.5.0
+```
+
+### Option 2: ###
+You also can create a conda environment with https://github.com/Shen-Lab/GraphCL/blob/master/semisupervised_TU/environment.yml with the command:
+```
+conda env create -f environment.yml
+conda activate graphcl
 ```
 
 Then, you need to create two directories for pre-trained models and finetuned results to avoid errors:

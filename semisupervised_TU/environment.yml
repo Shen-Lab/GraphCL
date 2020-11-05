@@ -1,0 +1,47 @@
+name: graphcl
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - ca-certificates=2020.6.24=0
+  - certifi=2020.6.20=py36_0
+  - ld_impl_linux-64=2.33.1=h53a641e_7
+  - libedit=3.1.20191231=h7b6447c_0
+  - libffi=3.3=he6710b0_1
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - ncurses=6.2=he6710b0_1
+  - openssl=1.1.1g=h7b6447c_0
+  - pip=20.1.1=py36_1
+  - python=3.6.10=h7579374_2
+  - readline=8.0=h7b6447c_0
+  - setuptools=47.3.1=py36_0
+  - sqlite=3.32.3=h62c20be_0
+  - tk=8.6.10=hbc83047_0
+  - wheel=0.34.2=py36_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - decorator==4.4.2
+    - future==0.18.2
+    - isodate==0.6.0
+    - joblib==0.16.0
+    - networkx==2.4
+    - numpy==1.19.0
+    - pandas==1.0.5
+    - pillow==7.2.0
+    - plyfile==0.7.2
+    - pyparsing==2.4.7
+    - python-dateutil==2.8.1
+    - pytz==2020.1
+    - rdflib==5.0.0
+    - scikit-learn==0.23.1
+    - scipy==1.5.0
+    - six==1.15.0
+    - threadpoolctl==2.1.0
+    - torch==1.4.0
+    - torch-cluster==1.4.5
+    - torch-geometric==1.1.0
+    - torch-scatter==1.1.0
+    - torch-sparse==0.4.4
+    - torchvision==0.5.0

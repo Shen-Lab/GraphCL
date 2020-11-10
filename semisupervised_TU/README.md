@@ -25,6 +25,7 @@ Then, you need to create two directories for pre-trained models and finetuned re
 ```
 cd ./pre-training
 mkdir models
+mkdir logs
 cd ..
 cd ./funetuning
 mkdir logs

@@ -214,9 +214,9 @@ class ResGCN(torch.nn.Module):
     def loss_cl(self, x1, x2):
         T = 0.5
         batch_size, _ = x1.size()
-        batch_size *= 2
-
-        x1, x2 = torch.cat((x1, x2), dim=0), torch.cat((x2, x1), dim=0)
+        
+        # batch_size *= 2
+        # x1, x2 = torch.cat((x1, x2), dim=0), torch.cat((x2, x1), dim=0)
 
         x1_abs = x1.norm(dim=1)
         x2_abs = x2.norm(dim=1)

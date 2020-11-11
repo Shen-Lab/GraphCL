@@ -1,6 +1,6 @@
 # Graph Contrastive Learning with Augmentations
 
-PyTorch implementation for [Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902) [[poster]](https://yyou1996.github.io/files/neurips2020_graphcl_poster.pdf) [[supplement]](https://yyou1996.github.io/files/neurips2020_graphcl_supplement.pdf) [[slides]](https://yyou1996.github.io/files/neurips2020_graphcl_slides.pdf)
+PyTorch implementation for [Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902) [[poster]](https://yyou1996.github.io/files/neurips2020_graphcl_poster.pdf) [[supplement]](https://yyou1996.github.io/files/neurips2020_graphcl_supplement.pdf)
 
 Yuning You<sup>\*</sup>, Tianlong Chen<sup>\*</sup>, Yongduo Sui, Ting Chen, Zhangyang Wang, Yang Shen
 

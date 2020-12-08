@@ -1,8 +1,11 @@
-# DGI Node-Classification
+# CL in Node-Classification
 1. Requirements
-(1) pytorch==1.5.0
-(2) 
 
-1. Command example
+(1) python==3.6.2
+
+(2) pytorch==1.5.0
+
+2. Command example
+For subgraph augmentation in contrastive learning on citeseer dataset:
 
    `python -u execute.py --dataset citeseer --aug_type subgraph --drop_percent 0.20 --seed 39 --save_name cite_best_dgi.pkl --gpu 5`

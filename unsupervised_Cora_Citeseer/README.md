@@ -1,9 +1,9 @@
 # CL in Node-Classification
 1. Requirements
 
-(1) python==3.6.2
+`` python==3.6.2``
 
-(2) pytorch==1.5.0
+`` pytorch==1.5.0``
 
 2. Command example
 For subgraph augmentation in contrastive learning on citeseer dataset:

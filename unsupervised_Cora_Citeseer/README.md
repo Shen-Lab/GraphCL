@@ -1,12 +1,12 @@
 # GraphCL in Node-Classification Tasks
 
-1. Requirements
+## 1. Requirements
 
 `` python==3.6.2``
 
 `` pytorch==1.5.0``
 
-2. Command example
+## 2. Command example
 
 For subgraph augmentation in contrastive learning on citeseer dataset:
 

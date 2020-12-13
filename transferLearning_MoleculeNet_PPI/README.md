@@ -11,7 +11,7 @@ cd ./chem
 python pretrain_graphcl.py --output_model_file ./models_graphcl
 ```
 
-###Finetuning:###
+### Finetuning: ###
 ```
 cd ./bio
 ./finetune.sh

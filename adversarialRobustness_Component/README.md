@@ -3,7 +3,7 @@
 Please refer to https://github.com/Hanjun-Dai/graph_adversarial_attack for environment setup and to download dataset.
 
 ## Training & Evaluation
-### Pre-training: ###
+### Pre-training + finetuning: ###
 ```
 cd ./code/graph_classification
 ./run_er_components.sh 15 20 2 -phase train
@@ -11,7 +11,7 @@ cd ./code/graph_classification
 ./run_er_components.sh 15 20 4 -phase train
 ```
 
-### Finetuning: ###
+### Adversarial attacks: ###
 ```
 cd ./code/graph_attack
 ./run_trivial.sh 15 20 2 -phase train

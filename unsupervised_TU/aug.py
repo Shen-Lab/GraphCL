@@ -314,8 +314,8 @@ def drop_nodes(data):
 
     adj = torch.zeros((node_num, node_num))
     adj[edge_index[0], edge_index[1]] = 1
-    adj[idx_nondrop, :] = 0
-    adj[:, idx_nondrop] = 0
+    adj[idx_drop, :] = 0
+    adj[:, idx_drop] = 0
     edge_index = adj.nonzero().t()
 
     data.edge_index = edge_index
@@ -379,14 +379,11 @@ def subgraph(data):
 
     adj = torch.zeros((node_num, node_num))
     adj[edge_index[0], edge_index[1]] = 1
-    adj[idx_nondrop, :] = 0
-    adj[:, idx_nondrop] = 0
+    adj[idx_drop, :] = 0
+    adj[:, idx_drop] = 0
     edge_index = adj.nonzero().t()
 
     data.edge_index = edge_index
-
-    data.edge_index = edge_index
-
 
 
 

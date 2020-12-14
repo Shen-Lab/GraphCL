@@ -27,7 +27,7 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 
 * Transfer learning [[MoleculeNet_and PPI]](https://github.com/Shen-Lab/GraphCL/tree/master/transferLearning_MoleculeNet_PPI)
 
-* Adversarial robustness [[Component graphs]](https://github.com/Shen-Lab/GraphCL/tree/master/adversarialRobustness_Component)
+* Adversarial robustness [[Component Graphs]](https://github.com/Shen-Lab/GraphCL/tree/master/adversarialRobustness_Component)
 
 ## Citation
 

@@ -6,9 +6,9 @@ Please refer to https://github.com/snap-stanford/pretrain-gnns#installation for 
 ### Pre-training: ###
 ```
 cd ./bio
-python pretrain_graphcl.py --output_model_file ./models_graphcl
+python pretrain_graphcl.py --aug1 random --aug2 random --output_model_file ./models_graphcl
 cd ./chem
-python pretrain_graphcl.py --output_model_file ./models_graphcl
+python pretrain_graphcl.py --aug1 random --aug2 random --output_model_file ./models_graphcl
 ```
 
 ### Finetuning: ###

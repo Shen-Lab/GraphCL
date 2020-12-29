@@ -117,9 +117,6 @@ def main():
         edge_num += d.edge_index.size()[1]
     print(node_num / len(dataset))
     print(edge_num / len(dataset))
-    assert False
-
-
 
     if args.split == "random":
         print("random splitting")

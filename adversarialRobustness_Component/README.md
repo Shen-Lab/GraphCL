@@ -1,6 +1,7 @@
 ## Dependencies & Dataset
 
 Please refer to https://github.com/Hanjun-Dai/graph_adversarial_attack for environment setup and to download dataset.
+After the configuration, you should have three directories: ```./code/```, ```./dropbox/``` and ```./pytorch_structure2vec/```.
 
 ## Training & Evaluation
 ### Pre-training + finetuning: ###

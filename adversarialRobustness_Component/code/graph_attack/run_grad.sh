@@ -2,12 +2,12 @@
 
 min_n=$1
 max_n=$2
-p=0.15
+p=$3
 dropbox=../../dropbox/
 data_folder=$dropbox/data/components
 min_c=1
 max_c=3
-max_lv=$3
+max_lv=$4
 rand=random
 
 save_fold=nodes-${min_n}-${max_n}-p-${p}-c-${min_c}-${max_c}-lv-${max_lv}

@@ -4,10 +4,10 @@ dropbox=../../dropbox
 
 min_n=$1
 max_n=$2
-p=0.15
+p=$3
 min_c=1
 max_c=3
-base_lv=$3
+base_lv=$4
 data_folder=$dropbox/data/components
 save_fold=nodes-${min_n}-${max_n}-p-${p}-c-${min_c}-${max_c}-lv-${base_lv}
 base_model_dump=$dropbox/scratch/results/graph_classification/components/$save_fold/epoch-best

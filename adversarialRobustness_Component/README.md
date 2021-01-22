@@ -6,9 +6,9 @@ Please refer to https://github.com/Hanjun-Dai/graph_adversarial_attack for envir
 ### Pre-training + finetuning: ###
 ```
 cd ./code/graph_classification
-./run_er_components.sh 15 20 2 -phase train
-./run_er_components.sh 15 20 3 -phase train
-./run_er_components.sh 15 20 4 -phase train
+./run_er_components.sh 15 20 0.15 2 -phase train
+./run_er_components.sh 15 20 0.15 3 -phase train
+./run_er_components.sh 15 20 0.15 4 -phase train
 ```
 
 ### Adversarial attacks: ###

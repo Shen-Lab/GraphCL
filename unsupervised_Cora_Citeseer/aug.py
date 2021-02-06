@@ -32,7 +32,7 @@ def aug_random_edge(input_adj, drop_percent=0.2):
         index_list.append((row_idx[i], col_idx[i]))
 
     single_index_list = []
-    for i in index_list:
+    for i in list(index_list):
         single_index_list.append(i)
         index_list.remove((i[1], i[0]))
     

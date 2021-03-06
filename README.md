@@ -34,11 +34,16 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 If you use this code for you research, please cite our paper.
 
 ```
-@article{you2020graph,
-  title={Graph Contrastive Learning with Augmentations},
-  author={You, Yuning and Chen, Tianlong and Sui, Yongduo and Chen, Ting and Wang, Zhangyang and Shen, Yang},
-  journal={arXiv preprint arXiv:2010.13902},
-  year={2020}
+@inproceedings{You2020GraphCL,
+ author = {You, Yuning and Chen, Tianlong and Sui, Yongduo and Chen, Ting and Wang, Zhangyang and Shen, Yang},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {5812--5823},
+ publisher = {Curran Associates, Inc.},
+ title = {Graph Contrastive Learning with Augmentations},
+ url = {https://proceedings.neurips.cc/paper/2020/file/3fe230348e9a12c13120749e3f9fa4cd-Paper.pdf},
+ volume = {33},
+ year = {2020}
 }
 ```
 

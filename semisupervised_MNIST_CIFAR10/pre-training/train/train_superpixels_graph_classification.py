@@ -21,7 +21,7 @@ def train_epoch(model, optimizer, device, data_loader, epoch, drop_percent, temp
     t0 = time.time()
    
     for iter, (batch_graphs, batch_labels, batch_snorm_n, batch_snorm_e) in enumerate(data_loader):
-
+        aug_batch_graphs = dgl.unbatch(batch_graphs)
         aug_list1, aug_list2 = aug.aug_double(aug_batch_graphs, aug_type)
         batch_graphs, batch_snorm_n, batch_snorm_e= aug.collate_batched_graph(aug_list1)
         aug_batch_graphs, aug_batch_snorm_n, aug_batch_snorm_e= aug.collate_batched_graph(aug_list2)

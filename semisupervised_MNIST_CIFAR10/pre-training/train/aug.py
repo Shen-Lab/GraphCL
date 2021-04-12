@@ -129,8 +129,8 @@ def aug_drop_add_link(graph, drop_percent=0.2):
     
     for i in range(drop_num):
 
-        random_idx = randint(0, edge_num - 1) # 在这个范围里面随机找边
-        u_v = aug_graph.find_edges(all_edges_id_list[random_idx]) # 返回源和目的节点u v
+        random_idx = randint(0, edge_num - 1) 
+        u_v = aug_graph.find_edges(all_edges_id_list[random_idx]) 
         del_edge_id1 = aug_graph.edge_ids(u_v[0], u_v[1])
         del_edge_id2 = aug_graph.edge_ids(u_v[1], u_v[0])
         if del_edge_id1.size(0):
@@ -144,7 +144,7 @@ def aug_drop_add_link(graph, drop_percent=0.2):
     '''
         above finish drop edges
     '''
-    node_num = aug_graph.number_of_nodes() # 每个graph的node数量
+    node_num = aug_graph.number_of_nodes() 
     l = [[i, j] for i in range(node_num) for j in range(i)]
     d = torch.tensor(random.sample(l, add_num))
     add_edges_src_list = d.t()[0]
@@ -170,8 +170,8 @@ def aug_mask_list(graph_list, drop_percent):
 
 def aug_mask(graph, drop_percent=0.2):
     
-    num = graph.number_of_nodes() # 每个graph的node数量
-    mask_num = int(num * drop_percent) # mask的数目
+    num = graph.number_of_nodes() 
+    mask_num = int(num * drop_percent) 
     node_idx = [i for i in range(num)]
     mask_list = random.sample(node_idx, mask_num)
     aug_graph = copy.deepcopy(graph)
@@ -254,22 +254,22 @@ tsp dataset drop add links
 def aug_tsp_drop_add_link(graph_list, drop_percent=0.2):
 
     pro = drop_percent / 2 # 0.1    160 * 0.1 = 16 
-    graph_num = len(graph_list) # graph的数量
+    graph_num = len(graph_list) 
     aug_list = []
     
     for i in range(graph_num):
         
         aug_graph = copy.deepcopy(graph_list[i])
         edge_num = aug_graph.number_of_edges()
-        drop_num = int(edge_num * pro) # 要删除的边数（有向） 
-        add_num = int(edge_num * pro)  # 要添加的边数（有向） 
+        drop_num = int(edge_num * pro) 
+        add_num = int(edge_num * pro)   
         all_edges_id_list = [i for i in range(edge_num)]
         del_edges_id_list = random.sample(all_edges_id_list, drop_num)
         aug_graph.remove_edges(del_edges_id_list)
         '''
             above finish drop edges
         '''
-        node_num = aug_graph.number_of_nodes() # 每个graph的node数量
+        node_num = aug_graph.number_of_nodes() 
         l = [(i, j) for i in range(node_num) for j in range(node_num)]
         d = random.sample(l, add_num)
         add_edges_src_list = []
@@ -337,9 +337,9 @@ def aug_add_edges(graph_list, drop_percent=0.2):
 
         aug_graph = copy.deepcopy(graph_list[i])
         edge_num = aug_graph.number_of_edges()
-        add_num = int(edge_num * drop_percent / 2) # 要添加的双向边的对数 8
+        add_num = int(edge_num * drop_percent / 2)
 
-        node_num = aug_graph.number_of_nodes() # 每个graph的node数量
+        node_num = aug_graph.number_of_nodes()
         l = []
         for i in range(node_num):
             for j in range(i):
@@ -371,14 +371,14 @@ def aug_drop_edges(graph_list, drop_percent=0.2):
 
         aug_graph = copy.deepcopy(graph_list[i])
         edge_num = aug_graph.number_of_edges()
-        drop_num = int(edge_num * drop_percent / 2) # 要删除的双向边的对数 8
+        drop_num = int(edge_num * drop_percent / 2) 
         
         del_edges_id_list = [] 
         all_edges_id_list = [i for i in range(edge_num)]
         for i in range(drop_num):
 
-            random_idx = randint(0, edge_num - 1) # 在这个范围里面随机找边
-            u_v = aug_graph.find_edges(all_edges_id_list[random_idx]) # 返回源和目的节点u v
+            random_idx = randint(0, edge_num - 1) 
+            u_v = aug_graph.find_edges(all_edges_id_list[random_idx])
             del_edge_id1 = aug_graph.edge_ids(u_v[0], u_v[1])
             del_edge_id2 = aug_graph.edge_ids(u_v[1], u_v[0])
             del_edges_id_list.append(del_edge_id1)
@@ -397,7 +397,7 @@ add noise
 
 def add_guassian_noise(graph_list, drop_percent=1):
 
-    graph_num = len(graph_list) # graph的数量
+    graph_num = len(graph_list) 
     aug_list = []
     for i in range(graph_num):
         aug_graph = copy.deepcopy(graph_list[i])
@@ -413,11 +413,11 @@ SBM dataset mask
 
 def add_SBM_mask(graph_list, drop_percent=0.2):
     
-    graph_num = len(graph_list) # graph的数量
+    graph_num = len(graph_list) 
     aug_list = []
     for i in range(graph_num):
-        num = graph_list[i].number_of_nodes() # 每个graph的node数量
-        mask_num = int(num * drop_percent) # mask的数目
+        num = graph_list[i].number_of_nodes() 
+        mask_num = int(num * drop_percent) 
         node_idx = [i for i in range(num)]
         mask_list = random.sample(node_idx, mask_num)
         aug_graph = copy.deepcopy(graph_list[i])

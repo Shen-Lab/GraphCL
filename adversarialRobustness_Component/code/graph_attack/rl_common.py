@@ -169,7 +169,7 @@ def load_graphs():
     return label_map, train_glist, test_glist
 
 def test_graphs(classifier, test_glist):
-    test_loss = loop_dataset(test_glist, classifier, list(range(len(test_glist))))
+    test_loss = loop_dataset(test_glist, classifier, list(range(len(test_glist))), epoch=101)
     print('\033[93maverage test: loss %.5f acc %.5f\033[0m' % (test_loss[0], test_loss[1]))
 
 def load_base_model(label_map, test_glist = None):

@@ -41,7 +41,7 @@ if __name__ == '__main__':
     if cmd_args.ctx == 'gpu':
         classifier = classifier.cuda()
     if cmd_args.phase == 'test':
-        test_loss = loop_dataset(test_glist, classifier, list(range(len(test_glist))))
+        test_loss = loop_dataset(test_glist, classifier, list(range(len(test_glist))), epoch=101)
         print('\033[93maverage test: loss %.5f acc %.5f\033[0m' % (test_loss[0], test_loss[1]))
 
     if cmd_args.phase == 'train':

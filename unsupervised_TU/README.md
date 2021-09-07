@@ -1,6 +1,6 @@
 ## Dependencies
 
-* [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric#installation)
+* [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric#installation)==1.6.0
 
 Then, you need to create a directory for recoreding finetuned results to avoid errors:
 

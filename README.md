@@ -13,8 +13,6 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 
 ![](./graphcl.png)
 
-
-
 ![](./augmentations.png)
 
 ## Experiments
@@ -24,6 +22,11 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 * Unsupervised representation learning [[TU Datasets]](https://github.com/Shen-Lab/GraphCL/tree/master/unsupervised_TU) [[Cora and Citeseer]](https://github.com/Shen-Lab/GraphCL/tree/master/unsupervised_Cora_Citeseer)
 * Transfer learning [[MoleculeNet and PPI]](https://github.com/Shen-Lab/GraphCL/tree/master/transferLearning_MoleculeNet_PPI)
 * Adversarial robustness [[Component Graphs]](https://github.com/Shen-Lab/GraphCL/tree/master/adversarialRobustness_Component)
+
+## Potential Issues
+Some issues might occur due to version mismatch. I collect them as follows (keep updating).
+* ```KeyError:'num_nodes'``` in unsupervised_TU: https://github.com/Shen-Lab/GraphCL/issues/36
+* ```AttributeError: 'Data' object has no attribute 'cat_dim'``` in transferLearning_MoleculeNet_PPI: https://github.com/Shen-Lab/GraphCL/issues/13
 
 ## Citation
 

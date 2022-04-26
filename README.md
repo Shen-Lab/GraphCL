@@ -25,7 +25,7 @@ Systematic study is performed as shown in Figure 2, to assess the performance of
 
 ## Potential Issues
 Some issues might occur due to the version mismatch. I collect them as follows (keep updating).
-* ```KeyError:'num_nodes'``` in unsupervised_TU: https://github.com/Shen-Lab/GraphCL/issues/36
+* ```KeyError:'num_nodes'``` in unsupervised_TU: https://github.com/Shen-Lab/GraphCL/issues/36, https://github.com/Shen-Lab/GraphCL/issues/41
 * ```AttributeError: 'Data' object has no attribute 'cat_dim'``` in transferLearning_MoleculeNet_PPI: https://github.com/Shen-Lab/GraphCL/issues/13
 
 ## Citation

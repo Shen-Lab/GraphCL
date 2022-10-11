@@ -6,6 +6,16 @@ Yuning You<sup>\*</sup>, Tianlong Chen<sup>\*</sup>, Yongduo Sui, Ting Chen, Zha
 
 In NeurIPS 2020.
 
+
+## External links
+
+For the automated version of GraphCL, please refer to https://github.com/Shen-Lab/GraphCL_Automated.
+
+For the extention of GraphCL to hypergraphs, please refer to https://github.com/weitianxin/HyperGCL.
+
+For the most comprehensive collection of graph SSL papers, please refer to https://github.com/ChandlerBang/awesome-self-supervised-gnn.
+
+
 ## Overview
 
 In this repository, we develop contrastive learning with augmentations for GNN pre-training (GraphCL, Figure 1) to address the challenge of data heterogeneity in graphs.

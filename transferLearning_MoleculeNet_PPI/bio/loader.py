@@ -307,7 +307,7 @@ def subgraph(data, aug_ratio):
         if sample_node in idx_sub:
             continue
         idx_sub.append(sample_node)
-        idx_neigh.union(set([n for n in edge_index[1][edge_index[0]==idx_sub[-1]]]))
+        idx_neigh = idx_neigh.union(set([n for n in edge_index[1][edge_index[0]==idx_sub[-1]]]))
 
     idx_drop = [n for n in range(node_num) if not n in idx_sub]
     idx_nondrop = idx_sub

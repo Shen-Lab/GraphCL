@@ -39,6 +39,7 @@ Some issues might occur due to the version mismatch. I collect them as follows (
 * ```AttributeError: 'Data' object has no attribute 'cat_dim'``` in transferLearning_MoleculeNet_PPI: https://github.com/Shen-Lab/GraphCL/issues/13
 * Bugs in subgraph implementation: https://github.com/Shen-Lab/GraphCL/issues/24
 * Loss of negative values in transfer learning: https://github.com/Shen-Lab/GraphCL/issues/50
+* Obsolete url of TU-Dataset: https://github.com/Shen-Lab/GraphCL/issues/71
 
 ## Citation
 
